@@ -1,5 +1,5 @@
 import React from 'react';
-import mobile from "./meu/src/assets/Mobile application.png";
+import mobile from "./assets/Mobile application.png";
 
 
 function Contact () {

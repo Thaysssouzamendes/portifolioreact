@@ -1,26 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from '../Header';
-import Main from '../Main';
+// Importe as dependências necessárias do react-router-dom
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Importe seus componentes
+import Header from './Header';
+import Main from './Main';
 import Contact from './Contact';
-import Footer from '../Footer';
-import '../App.css';
+import Footer from './Footer';
 
 function App() {
-
   return (
-
     <Router>
-      <Switch>
-        <Route>    
-            <Header/>
-            <Main/>
-            <Contact/>
-            <Footer/>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
     </Router>
-    
   );
 }
 

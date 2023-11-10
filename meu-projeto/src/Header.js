@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
-import vector from "meu/src/assets/vector.png";
-
+import vector from "./assets/vector.png";
 
 function dark() {
     // Obtém uma referência ao elemento <body> do documento
